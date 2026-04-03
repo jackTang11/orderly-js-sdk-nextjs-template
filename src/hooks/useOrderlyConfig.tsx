@@ -120,7 +120,7 @@ export const useOrderlyConfig = () => {
             component: (
               <img
                 alt="Orderly logo"
-                src="/images/orderly-logo.svg"
+                src="https://www.uxuy.com/assets/svgs/logo-dark.svg"
                 style={{ width: 100, height: 40 }}
               />
             ),
@@ -137,9 +137,11 @@ export const useOrderlyConfig = () => {
       },
       tradingPage: {
         tradingViewConfig: {
-          // scriptSRC: "/tradingview/charting_library/charting_library.js",
-          // library_path: "/tradingview/charting_library/",
-          // customCssUrl: "/tradingview/chart.css",
+          scriptSRC:
+            "https://perps.raydium.io/tradingview/charting_library/charting_library.js",
+          library_path:
+            "https://perps.raydium.io/tradingview/charting_library/",
+          customCssUrl: "https://perps.raydium.io/tradingview/chart.css",
         } as TradingPageProps["tradingViewConfig"],
         sharePnLConfig: {
           backgroundImages: [
