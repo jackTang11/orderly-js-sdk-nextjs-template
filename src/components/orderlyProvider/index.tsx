@@ -50,7 +50,7 @@ const OrderlyProvider: FC<{ children: ReactNode }> = (props) => {
         <OrderlyAppProvider
           brokerId="uxuy"
           brokerName="UXUY"
-          networkId="mainnet"
+          networkId="testnet"
           appIcons={config.orderlyAppProvider.appIcons}
           onRouteChange={onRouteChange}
         >
