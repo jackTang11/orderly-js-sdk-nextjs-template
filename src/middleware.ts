@@ -14,7 +14,7 @@ const localePaths = Object.values(PathEnum);
 // Get the locale from cookie
 function getLocaleFromCookie(request: NextRequest) {
   const lang = request.cookies.get(i18nCookieKey)?.value;
-  return parseI18nLang(lang!);
+  return parseI18nLang(lang!) || "en";
 }
 
 export function middleware(request: NextRequest) {
